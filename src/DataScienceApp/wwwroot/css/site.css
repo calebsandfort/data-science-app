@@ -1,0 +1,79 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+/*#region block-header */
+
+.block-header h2 {
+    margin: 40px 0;
+    font-size: 24px;
+    font-weight: 300;
+    color: #515151;
+    text-transform: uppercase;
+    background: #eee;
+}
+
+.block-header-primary h2 {
+    color: #337ab7;
+    background: #337ab7;
+}
+
+.block-header-success h2 {
+    color: #5cb85c;
+    background: #5cb85c;
+}
+
+.block-header-info h2 {
+    color: #5bc0de;
+    background: #5bc0de;
+}
+
+.block-header-warning h2 {
+    color: #f0ad4e;
+    background: #f0ad4e;
+}
+
+.block-header-danger h2 {
+    color: #d9534f;
+    background: #d9534f;
+}
+
+.block-header h2 .title {
+    background: #fff;
+    padding: 0 15px 0 0;
+}
+
+.block-header-grade-a h2 .title {
+    background: #eeeeee;
+}
+
+.block-header h2 .decoration {
+    background: #fff;
+    padding-left: 3px;
+    margin-left: 5px;
+}
+
+.block-header-grade-a h2 .decoration {
+    background: #eeeeee;
+}
+
+.block-header-eeeeee h2 .title,
+.block-header-eeeeee h2 .decoration {
+    background: #eeeeee !important;
+}
+
+.block-header-white h2 .decoration,
+.block-header-white h2 .title {
+    background: white !important;
+}
+
+/*#endregion */

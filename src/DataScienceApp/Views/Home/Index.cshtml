@@ -1,0 +1,38 @@
+﻿@model PriceEntriesUpload
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <button id="downloadCsv" class="btn btn-primary">Download CSV</button>
+    </div>
+</div>
+
+<form asp-action="Upload">
+    <div class="form-horizontal">
+        <h4>CSV Upload</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Symbol" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Symbol" class="form-control" />
+                <span asp-validation-for="Symbol" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Contents" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <textarea asp-for="Contents" class="form-control" rows="25" style="resize:none;"></textarea>
+                <span asp-validation-for="Contents" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Upload" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
